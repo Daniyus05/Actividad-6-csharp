@@ -6,27 +6,27 @@
 Console.WriteLine("¿Cuál es el segundo número que has elegido?");
 var segundoNumero = Console.ReadLine();
 int numero2 = int.Parse(segundoNumero); 
-        Console.WriteLine("Suma: " + Sumar(numero1, numero2));
-        Console.WriteLine("Resta: " + Restar(numero1, numero2));
-        Console.WriteLine("Multiplicación: " + Multiplicar(numero1, numero2));
-        Console.WriteLine("División: " + Dividir(numero1, numero2));
+        Console.WriteLine("El resultado de sumar " +numero1+ " y " +numero2+ " es " + Sumar(numero1, numero2));
+        Console.WriteLine("El resultado de restar " +numero1+ " y " +numero2+ " es " + Restar(numero1, numero2));
+        Console.WriteLine("El resultado de multiplicar " +numero1+ " y " +numero2+ " es " + Multiplicar(numero1, numero2));
+        Console.WriteLine("El resultado de dividir " +numero1+ " y " +numero2+ " es " + Dividir(numero1, numero2));
         
-        static double Sumar(int numero1, int numero2)
+        static int Sumar(int operando1, int operando2)
     {
-        return numero1 + numero2;
+        return operando1 + operando2;
     }
 
-    static double Restar(int numero1, int numero2)
+    static int Restar(int numero1, int numero2)
     {
         return numero1 - numero2;
     }
 
-    static double Multiplicar(int numero1, int numero2)
+    static int Multiplicar(int numero1, int numero2)
     {
         return numero1 * numero2;
     }
 
-    static double Dividir(int numero1, int numero2)
+    static int Dividir(int numero1, int numero2)
         {
             return numero1 / numero2;
         }
