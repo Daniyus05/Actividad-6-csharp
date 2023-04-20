@@ -11,23 +11,22 @@ int numero2 = int.Parse(segundoNumero);
         Console.WriteLine("El resultado de multiplicar " +numero1+ " y " +numero2+ " es " + Multiplicar(numero1, numero2));
         Console.WriteLine("El resultado de dividir " +numero1+ " y " +numero2+ " es " + Dividir(numero1, numero2));
         
-        static int Sumar(int operando1, int operando2)
+        static int Sumar(int sumando1, int sumando2)
     {
-        return operando1 + operando2;
+        return sumando1 + sumando2;
     }
 
-    static int Restar(int numero1, int numero2)
+    static int Restar(int minuendo, int sustraendo)
     {
-        return numero1 - numero2;
+        return minuendo - sustraendo;
     }
 
-    static int Multiplicar(int numero1, int numero2)
+    static int Multiplicar(int factor1, int factor2)
     {
-        return numero1 * numero2;
+        return factor1 * factor2;
     }
 
-    static int Dividir(int numero1, int numero2)
+    static int Dividir(int dividendo, int divisor)
         {
-            return numero1 / numero2;
+            return dividendo / divisor;
         }
-
